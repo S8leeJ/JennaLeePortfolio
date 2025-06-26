@@ -9,7 +9,7 @@ import CustomCursor from './CustomCursor';
 export default function App() {
   return (
     <Router>
-      <div className="font-fredoka relative min-h-screen bg-gradient-to-b from-black via-purple-1000 to-purple-700 text-white overflow-hidden">
+      <div className="font-roboto relative min-h-screen bg-gradient-to-b from-black via-purple-1000 to-purple-700 text-white overflow-hidden">
         {/* Background stars */}
         <div className="absolute top-0 left-0 right-0 h-1/2 z-10">
           <StarsBackground />

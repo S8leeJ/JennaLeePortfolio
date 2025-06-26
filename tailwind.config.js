@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fredoka: ['Fredoka', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         brandPurple: '#B8BAFF',  // your custom purple color

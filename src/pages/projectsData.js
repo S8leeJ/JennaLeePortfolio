@@ -3,7 +3,7 @@ import kingdomVid from '../Images/Kingdom.mov';
 import unityOsakaVid from '../Images/UnityOsaka.mov';
 import Osaka from '../Images/Osaka.png';
 import azul from '../Images/Azul.png';
-import azulVid from '../Images/Azultime.mov';
+import azulVid from '../Images/Azul.mov';
 import sparrowVid from '../Images/Sparrow.mov';
 import sparrow from '../Images/sparrow.png';
 import Datasci from '../Images/Datasci0.png';
@@ -23,6 +23,7 @@ const projects = [
     github: 'https://github.com/S8leeJ/KingdomBuilder-EJJ',
     demo: 'https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing',
     videoUrl: kingdomVid
+
   },
   {
     title: 'Osaka Dash',
@@ -46,6 +47,7 @@ const projects = [
     github: 'https://github.com/EvuhLi/AzulTile',
     demo: 'https://docs.google.com/document/d/1428-xlBuNChgJ9U-SDOi1Q7OlDibVh58wX4jslP0Fn0/edit?usp=sharing',
     videoUrl: azulVid
+
   },
   {
     title: 'Sparrow',
