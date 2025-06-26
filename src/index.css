@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
- 
- 
+ body {
+  cursor: none;
+}
+ .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
