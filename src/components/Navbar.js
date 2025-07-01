@@ -79,7 +79,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 mt-2 modern-card p-4 z-50 animate-fade-in">
+        <div className="absolute top-full left-0 right-0 mt-2 modern-card2 p-4 z-50 animate-fade-in">
           <div className="flex flex-col space-y-4">
             <Link 
               to="/" 
