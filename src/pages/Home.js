@@ -6,7 +6,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
-          <h1 className="font-outfit text-7xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight">
+          <h1 className="text-9xl font-bold mb-6">
             <span className="text-white">Jenna</span>
             <span className="title-text"> Lee</span>
           </h1>
@@ -14,8 +14,7 @@ export default function Home() {
             Computer Science Student at UT Austin
           </p>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating intuitive digital experiences through code and design. 
-            Specializing in front-end development, UI/UX, and innovative technology solutions.
+            Hey, I'm Jenna, it is nice to meet you! I love combining technical expertise with creative problem-solving to deliver exceptional user experiences.
           </p>
         </div>
 
