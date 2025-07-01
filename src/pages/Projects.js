@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import projects from './projectsData';
+import { FaChevronLeft, FaChevronRight, FaTimes, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 export default function Projects() {
   const scrollRef = useRef(null);
@@ -14,116 +15,143 @@ export default function Projects() {
   };
 
   return (
-    <div className="min-h-screen px-6 py-16 text-white relative overflow-hidden">
-      <h2 className="text-8xl font-bold font-sans mb-12 text-purple-300">My Projects</h2>
+    <div className="min-h-screen py-16 text-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h1 className="font-outfit text-6xl md:text-7xl font-bold mb-6 text-blue-300">
+            My Projects
+          </h1>
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            A collection of my work showcasing front-end development, UI/UX design, 
+            and innovative technology solutions.
+          </p>
+        </div>
 
-      <button
-        onClick={() => scroll('left')}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 p-2 rounded-full"
-      >
-        ←
-      </button>
-      <button
-        onClick={() => scroll('right')}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 p-2 rounded-full"
-      >
-        →
-      </button>
+        {/* Projects Carousel */}
+        <div className="relative">
+          <button
+            onClick={() => scroll('left')}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 modern-card p-3 hover:bg-white/10 transition-all duration-300 group"
+            aria-label="Scroll left"
+          >
+            <FaChevronLeft className="text-xl text-slate-300 group-hover:text-blue-300 transition-colors" />
+          </button>
+          
+          <button
+            onClick={() => scroll('right')}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 modern-card p-3 hover:bg-white/10 transition-all duration-300 group"
+            aria-label="Scroll right"
+          >
+            <FaChevronRight className="text-xl text-slate-300 group-hover:text-blue-300 transition-colors" />
+          </button>
 
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-auto px-6 py-4 scrollbar-hide scroll-smooth"
-      >
-        {projects.map((proj, index) => (
-          <ProjectCard
-            key={index}
-            title={proj.title}
-            shortDescription={proj.shortDescription}
-            image={proj.image}
-            onClick={() => setSelected(proj)}
-          />
-        ))}
-      </div>
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto px-6 py-4 scrollbar-hide scroll-smooth"
+          >
+            {projects.map((proj, index) => (
+              <ProjectCard
+                key={index}
+                title={proj.title}
+                shortDescription={proj.shortDescription}
+                image={proj.image}
+                onClick={() => setSelected(proj)}
+              />
+            ))}
+          </div>
+        </div>
 
-      {selected && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center px-4">
-          <div className="bg-white/10 backdrop-blur-md rounded-xl text-white max-w-2xl w-full relative overflow-hidden">
-            <button
-              onClick={() => setSelected(null)}
-              className="absolute top-4 right-4 text-xl bg-black/20 hover:bg-white/30 rounded-full px-3"
-            >
-              ✕
-            </button>
+        {/* Project Modal */}
+        {selected && (
+          <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
+            <div className="modern-card max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+              <button
+                onClick={() => setSelected(null)}
+                className="absolute top-6 right-6 z-10 modern-card p-3 hover:bg-white/10 transition-all duration-300 group"
+                aria-label="Close modal"
+              >
+                <FaTimes className="text-xl text-slate-300 group-hover:text-blue-300 transition-colors" />
+              </button>
 
-            {selected.videoUrl ? (
-              <div className="w-full flex justify-center mt-4">
-                <div className="w-[600px] h-[340px] rounded-xl overflow-hidden shadow-lg">
-                  <video
-                    src={selected.videoUrl}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover"
-                  ></video>
-                </div>
-              </div>
-            )
-              : (
-                <img
-                  src={selected.image}
-                  alt={selected.title}
-                  className="w-full h-64 object-cover"
-                />
-              )}
-
-            <div className="p-6 space-y-4">
-              <h3 className="text-3xl font-bold">{selected.title}</h3>
-              <p className="text-gray-300">{selected.longDescription}</p>
-
-              {selected.tech && (
-                <div>
-                  <h4 className="font-semibold mt-4">Tech Used:</h4>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {selected.tech.map((t, i) => (
-                      <span
-                        key={i}
-                        className="bg-white/20 px-3 py-1 rounded-full text-sm"
-                      >
-                        {t}
-                      </span>
-                    ))}
+              {/* Project Media */}
+              <div className="w-full">
+                {selected.videoUrl ? (
+                  <div className="w-full flex justify-center p-6">
+                    <div className="w-full max-w-2xl aspect-video rounded-xl overflow-hidden shadow-2xl">
+                      <video
+                        src={selected.videoUrl}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
-                </div>
-              )}
+                ) : (
+                  <div className="w-full p-6">
+                    <img
+                      src={selected.image}
+                      alt={selected.title}
+                      className="w-full max-h-96 object-cover rounded-xl shadow-2xl"
+                    />
+                  </div>
+                )}
+              </div>
 
-              <div className="flex gap-4 mt-4">
-                {selected.github && (
-                  <a
-                    href={selected.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-yellow-400"
-                  >
-                    Project link
-                  </a>
+              {/* Project Details */}
+              <div className="p-8 space-y-6">
+                <div>
+                  <h3 className="font-outfit text-4xl font-bold mb-4">{selected.title}</h3>
+                  <p className="text-slate-300 leading-relaxed text-lg">{selected.longDescription}</p>
+                </div>
+
+                {selected.tech && (
+                  <div>
+                    <h4 className="font-outfit text-2xl font-semibold mb-4">Technologies Used</h4>
+                    <div className="flex flex-wrap gap-3">
+                      {selected.tech.map((t, i) => (
+                        <span
+                          key={i}
+                          className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium border border-blue-500/30"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 )}
-                {selected.demo && (
-                  <a
-                    href={selected.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-yellow-400"
-                  >
-                    Project Proposal
-                  </a>
-                )}
+
+                <div className="flex flex-wrap gap-4 pt-4">
+                  {selected.github && (
+                    <a
+                      href={selected.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-secondary flex items-center gap-3 group"
+                    >
+                      <FaGithub className="group-hover:scale-110 transition-transform" />
+                      <span>View Code</span>
+                    </a>
+                  )}
+                  {selected.demo && (
+                    <a
+                      href={selected.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary flex items-center gap-3 group"
+                    >
+                      <FaExternalLinkAlt className="group-hover:scale-110 transition-transform" />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
-
+        )}
+      </div>
     </div>
   );
 }

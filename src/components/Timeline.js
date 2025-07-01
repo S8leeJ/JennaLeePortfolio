@@ -20,7 +20,6 @@ export default function Timeline() {
         'Historian of CSHS',
         'Robotics Awards Director',
         'Technology Student Association (Member)',
-
       ],
     },
     {
@@ -39,34 +38,54 @@ export default function Timeline() {
         'TMEA Honor String Orchestra winner/soloist (2024)',
         'TMEA All-State Violinist (rank 100 across the state of Texas)',
         'Two time Outstanding Performer for Katy Young Artist Competition',
-
       ],
     }
   ];
 
   return (
-    <div className="py-20 px-6 text-white ">
-      <h2 className="text-4xl font-bold font-sans mb-12">My Experience</h2>
-      <div className="relative border-l border-gray-700 max-w-3xl mx-auto ">
+    <div className="text-white">
+      <div className="relative">
+        {/* Timeline Line */}
+        <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 to-blue-600" />
+        
         {events.map((event, index) => (
-          <div key={index} className="mb-10 ml-6 ">
-            <div className="absolute w-4 h-4 bg-yellow-400 -left-2 border-2 border-white " />
-            <p className="text-sm text-gray-400">{event.year}</p>
-            <h3 className="text-xl font-semibold">{event.title}</h3>
-            <p className="text-gray-300">{event.description}</p>
+          <div key={index} className="relative mb-8 ml-12 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+            {/* Timeline Dot */}
+            <div className="absolute -left-8 top-2 w-5 h-5 bg-blue-400 rounded-full border-3 border-slate-900 shadow-lg" />
+            
+            {/* Content Card */}
+            <div className="modern-card p-5">
+              {event.year && (
+                <div className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium mb-3 border border-blue-500/30">
+                  {event.year}
+                </div>
+              )}
+              
+              <h3 className="font-outfit text-xl font-semibold mb-3 text-white">
+                {event.title}
+              </h3>
+              
+              {event.description && (
+                <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                  {event.description}
+                </p>
+              )}
 
-            {/* Bulleted List */}
-            {event.bullets && (
-              <ul className="list-disc list-inside mt-2 text-gray-300 space-y-1">
-                {event.bullets.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            )}
+              {/* Bulleted List */}
+              {event.bullets && (
+                <ul className="space-y-2">
+                  {event.bullets.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-slate-300 text-sm">
+                      <div className="w-2 h-2 bg-blue-400 rounded-full mt-1.5 flex-shrink-0" />
+                      <span className="leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
         ))}
       </div>
-
     </div>
   );
 }
