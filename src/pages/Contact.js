@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 
 export default function Contact() {
@@ -18,9 +19,20 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // You can add email service integration here
+    emailjs.sendForm(
+      'service_qgiozzk',
+      'template_kzacr96',
+      e.target,
+      'JnkQDrcKguCsvclUy'
+    ).then(
+      (result) => {
+        alert('Message sent!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      },
+      (error) => {
+        alert('Failed to send message. Please try again.');
+      }
+    );
   };
 
   return (
@@ -123,7 +135,7 @@ export default function Contact() {
             <div className="modern-card p-8">
               <h3 className="font-outfit text-2xl font-semibold mb-6">Let's Connect</h3>
               <p className="text-slate-300 leading-relaxed mb-8">
-                Feel free to reach out through any of these channels.  
+                Feel free to reach out through any of these channels. I typically respond within 24 hours during weekdays.
               </p>
               
               <div className="space-y-4">
@@ -173,7 +185,7 @@ export default function Contact() {
                   <FaMapMarkerAlt className="text-blue-400 text-xl" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-slate-400 text-sm">Austin + Houston, Texas</p>
+                    <p className="text-slate-400 text-sm">Austin, Texas</p>
                   </div>
                 </div>
                 

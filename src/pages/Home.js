@@ -27,7 +27,7 @@ export default function Home() {
             <FaEnvelope className="group-hover:scale-110 transition-transform" />
             <span>Get In Touch</span>
           </a>
-          
+
           <a
             href="/about"
             className="btn-primary flex items-center gap-3 group"
@@ -48,7 +48,7 @@ export default function Home() {
           >
             <FaLinkedin className="text-xl text-slate-300 group-hover:text-blue-300 transition-colors" />
           </a>
-          
+
           <a
             href="https://github.com/jenna-lee"
             target="_blank"
@@ -58,7 +58,7 @@ export default function Home() {
           >
             <FaGithub className="text-xl text-slate-300 group-hover:text-blue-300 transition-colors" />
           </a>
-          
+
           <a
             href="mailto:jenna.snow.lee@gmail.com"
             className="p-3 modern-card hover:bg-white/10 transition-all duration-300 group"
@@ -69,10 +69,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <FaArrowDown className="text-slate-400 text-xl" />
-      </div>
+
     </div>
   );
 }
