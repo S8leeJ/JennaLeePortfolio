@@ -10,9 +10,23 @@ import Datasci from '../Images/Datasci0.png';
 import DatasciVid from '../Images/Datasci.mov';
 import VerVid from '../Images/Ver.mov';
 import Ver from '../Images/Ver.png';
-
+import AllClear from '../Images/AllClear.png'
+//import AllClearVid from '../Images/AllClear.mov'
 
 const projects = [
+  {
+    title: 'AllClear – Emergency Response App',
+    date: 'July 2025',
+    image: AllClear,
+    shortDescription: 'Real-time emergency response platform for disaster awareness and location safety',
+    longDescription:
+      'AllClear is a full-stack web app designed to keep users informed and safe during natural disasters. It allows users to view real-time hazard updates, weather overlays, and share their location with trusted contacts. Built in 36 hours during the Open Summer Hackathon, the app integrates OpenWeatherMap data, multi-hazard overlays using Leaflet.js, and secure user management with JWT-authenticated sessions. The project earned 1st in the Full Stack category among 100+ participants.',
+    tech: ['React', 'Node.js', 'MongoDB', 'OpenWeatherMap API', 'Leaflet.js'],
+    github: 'https://github.com/S8leeJ/allclear',
+    demo: 'https://www.youtube.com/watch?v=oH4qrkiLmvw',
+    //videoUrl: AllClearVid
+
+  },
   {
     title: 'Kingdom Builder',
     image: kingdom,

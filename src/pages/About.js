@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import profileImg from '../Images/profile.png'; // adjust path as needed
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import resume from '../Images/JennaLeeResume.pdf';
 
 import Timeline from '../components/Timeline.js';
 import { FaEnvelope, FaLinkedin, FaFileDownload, FaGithub, FaTimes, FaHistory, FaFileAlt } from 'react-icons/fa';
@@ -74,7 +75,7 @@ export default function About() {
                 </button>
                 
                 <a
-                  href="/Jenna_Lee_Resume.pdf" 
+                  href= {resume}
                   download
                   className="btn-secondary flex items-center gap-3 group"
                 >
@@ -83,7 +84,7 @@ export default function About() {
                 </a>
                 
                 <a
-                  href="mailto:jenna.snow.lee@gmail.com"
+                  href="/contact"
                   className="btn-secondary flex items-center gap-3 group"
                 >
                   <FaEnvelope className="group-hover:scale-110 transition-transform" />
