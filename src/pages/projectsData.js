@@ -11,7 +11,7 @@ import DatasciVid from '../Images/Datasci.mov';
 import VerVid from '../Images/Ver.mov';
 import Ver from '../Images/Ver.png';
 import AllClear from '../Images/AllClear.png'
-//import AllClearVid from '../Images/AllClear.mov'
+import AllClearVid from '../Images/AllClear.mov'
 
 const projects = [
   {
@@ -24,7 +24,7 @@ const projects = [
     tech: ['React', 'Node.js', 'MongoDB', 'OpenWeatherMap API', 'Leaflet.js'],
     github: 'https://github.com/S8leeJ/allclear',
     demo: 'https://www.youtube.com/watch?v=oH4qrkiLmvw',
-    //videoUrl: AllClearVid
+    videoUrl: AllClearVid
 
   },
   {

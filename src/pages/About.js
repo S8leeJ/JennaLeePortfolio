@@ -18,7 +18,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            A passionate Computer Science student merging design and code to build intuitive, 
+            A passionate Computer Science student merging design and code to build intuitive,
             user-focused digital experiences.
           </p>
         </div>
@@ -27,31 +27,46 @@ export default function About() {
         <div className="animate-fade-in-up">
           <div className="modern-card p-8">
             <div className="flex items-center gap-6 mb-8">
-              <img 
+              {/* <img 
                 src={profileImg} 
                 alt="Jenna Lee" 
                 className="w-24 h-24 rounded-full object-cover border-4 border-cyan-500/20"
-              />
+              /> */}
               <div>
                 <h2 className="font-outfit text-3xl font-semibold mb-2">Jenna Lee</h2>
                 <p className="text-blue-300 font-medium">Computer Science Student</p>
                 <p className="text-slate-400 text-sm">The University of Texas at Austin</p>
               </div>
-            </div>    
-            
+            </div>
+
             <div className="space-y-6">
               <p className="text-slate-300 leading-relaxed">
-                I'm passionate about UI/UX, front-end development, and using technology to support 
-                education, sustainability, and social impact. My approach combines technical expertise 
+                I'm passionate about UI/UX, front-end development, and using technology to support
+                education, sustainability, and social impact. My approach combines technical expertise
                 with creative problem-solving to deliver exceptional user experiences.
               </p>
-              
+
               <div className="flex flex-wrap gap-3">
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
                   React
                 </span>
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
                   JavaScript
+                </span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                  Java
+                </span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                  Express.js
+                </span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                  C#
+                </span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                  C++
+                </span>
+                  <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                  R
                 </span>
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
                   Python
@@ -61,6 +76,9 @@ export default function About() {
                 </span>
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
                   Front-end Development
+                </span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                  Back-end Development
                 </span>
               </div>
 
@@ -73,16 +91,16 @@ export default function About() {
                   <FaHistory className="group-hover:scale-110 transition-transform" />
                   <span>View Experience</span>
                 </button>
-                
+
                 <a
-                  href= {resume}
+                  href={resume}
                   download
                   className="btn-secondary flex items-center gap-3 group"
                 >
                   <FaFileDownload className="group-hover:scale-110 transition-transform" />
                   <span>Download Resume</span>
                 </a>
-                
+
                 <a
                   href="/contact"
                   className="btn-secondary flex items-center gap-3 group"
@@ -120,7 +138,7 @@ export default function About() {
               </div>
 
               {/* Experience Timeline */}
-    
+
               <Timeline />
             </div>
           </div>
