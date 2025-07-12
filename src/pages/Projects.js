@@ -143,7 +143,18 @@ export default function Projects() {
                       className="btn-primary flex items-center gap-3 group"
                     >
                       <FaExternalLinkAlt className="group-hover:scale-110 transition-transform" />
-                      <span>Live Demo</span>
+                      <span>Demo</span>
+                    </a>
+                  )}
+                  {selected.port && (
+                    <a
+                      href={selected.port}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary flex items-center gap-3 group"
+                    >
+                      <FaExternalLinkAlt className="group-hover:scale-110 transition-transform" />
+                      <span>Additional Materials</span>
                     </a>
                   )}
                 </div>

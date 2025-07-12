@@ -35,7 +35,7 @@ const projects = [
       'Kingdom Builder is a complete digital adaptation of the strategic board game, developed using Java AWT and Swing for interactive GUI elements, supporting card drawing, settlement placement, terrain highlighting, endgame scoring, and more. The game handles complete turn states, dynamic rendering, and user interaction across multiple rounds of gameplay.',
     tech: ['Java', 'Java AWT/Swing', 'Object-Oriented Programming'],
     github: 'https://github.com/S8leeJ/KingdomBuilder-EJJ',
-    demo: 'https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing',
+    port: 'https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing',
     videoUrl: kingdomVid
 
   },
@@ -59,7 +59,7 @@ const projects = [
       'Azul Tile is a complete digital adaptation of the strategic board game Azul, built entirely from scratch in Java. It uses Java AWT and Swing to create an interactive GUI with full support for game logic, tile drafting, wall patterns, and endgame scoring.',
     tech: ['Java', 'Java AWT/Swing', 'Object-Oriented Design'],
     github: 'https://github.com/EvuhLi/AzulTile',
-    demo: 'https://docs.google.com/document/d/1428-xlBuNChgJ9U-SDOi1Q7OlDibVh58wX4jslP0Fn0/edit?usp=sharing',
+    port: 'https://docs.google.com/document/d/1428-xlBuNChgJ9U-SDOi1Q7OlDibVh58wX4jslP0Fn0/edit?usp=sharing',
     videoUrl: azulVid
 
   },
@@ -80,7 +80,7 @@ const projects = [
     longDescription:
       'This project applies data science and analytics techniques to real-world cybersecurity attack datasets, uncovering patterns in threat types, frequency, and affected sectors. Using Python, various statistical tests and clustering methods were applied to identify anomalies, trends, and risk zones. The analysis placed 1st place for Regionals in the Technology Student Association Competition.',
     tech: ['Python', 'R', 'Data Visualization', 'Statistical Analysis'],
-    github: 'https://www.canva.com/design/DAF2ogiTYdE/7SmCUK88GC6-_vAS4vffVg/view?utm_content=DAF2ogiTYdE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h113492b658',
+    demo: 'https://www.canva.com/design/DAF2ogiTYdE/7SmCUK88GC6-_vAS4vffVg/view?utm_content=DAF2ogiTYdE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h113492b658',
     videoUrl: DatasciVid
   },
   {
@@ -90,8 +90,8 @@ const projects = [
     longDescription:
       'Verio Barreira is a sustainability-focused website developed using HTML, CSS, and JavaScript as part of the AFS Global STEM Academies. The site explores barriers to clean energy and community resilience through educational content, data storytelling, and cultural context. Presented to BP executives, it was awarded 1st place overall for its innovation, impact, and design.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Adobe Express', 'Sustainability Research'],
-    demo: 'https://www.canva.com/design/DAGKBMBwhsU/MAplTI-Oo49pVNmMHQBY2w/view?utm_content=DAGKBMBwhsU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h377422f479',
-    github: 'https://s8leej.github.io/Verio-Barreiro-BP/#home',
+    port: 'https://www.canva.com/design/DAGKBMBwhsU/MAplTI-Oo49pVNmMHQBY2w/view?utm_content=DAGKBMBwhsU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h377422f479',
+    demo: 'https://s8leej.github.io/Verio-Barreiro-BP/#home',
     videoUrl: VerVid
   },
 ];
