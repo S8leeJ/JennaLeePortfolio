@@ -164,7 +164,7 @@ export default function Contact() {
                 </a>
                 
                 <a
-                  href="https://github.com/jenna-lee"
+                  href="https://github.com/S8leeJ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-lg hover:bg-white/5 transition-colors group"

@@ -50,7 +50,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://github.com/jenna-lee"
+            href="https://github.com/S8leeJ"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 modern-card hover:bg-white/10 transition-all duration-300 group"
