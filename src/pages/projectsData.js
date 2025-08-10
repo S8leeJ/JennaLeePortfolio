@@ -12,6 +12,7 @@ import VerVid from '../Images/Ver.mov';
 import Ver from '../Images/Ver.png';
 import AllClear from '../Images/AllClear.png'
 import AllClearVid from '../Images/AllClear.mov'
+import stellar from '../Images/stellar.png'
 
 const projects = [
   {
@@ -26,8 +27,17 @@ const projects = [
     demo: 'https://www.youtube.com/watch?v=oH4qrkiLmvw',
     port: 'https://summeropen2025.com/winners',
     videoUrl: AllClearVid
-
   },
+   {
+    title: 'Stellar Learning',
+    date: 'July - Present',
+    image: stellar,
+    shortDescription: 'Frontend Developer at Stellar - a completely free AI-powered intuitive, gamified, and interactive learning experience',
+    longDescription:
+      'Stellar Learning is a cutting-edge educational platform that leverages AI to provide personalized learning experiences. As a Frontend Developer, I am responsible for creating engaging user interfaces and interactive features that enhance the learning journey for students. The platform incorporates gamification elements to motivate learners and track their progress in real-time.',
+    tech: ['Svelte', 'HTML', 'Tailwind CSS', 'TypeScript'],
+    demo: 'https://stellarlearning.app/',
+   },
   {
     title: 'Kingdom Builder',
     image: kingdom,
