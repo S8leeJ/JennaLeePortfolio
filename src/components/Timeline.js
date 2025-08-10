@@ -6,15 +6,26 @@ export default function Timeline() {
       description: 'Began studying Computer Science, more to come!',
     },
     {
-      year: '2021-2025',
-      title: 'Seven Lakes High School',
-      description: 'Ranked 8/887 students | 4.8261 Weighted GPA',
+      year: 'July-Present 2025',
+      title: 'Frontend Developer at Stellar Learning',
+      description: 'Built and optimized scalable, intuitive front-end features for an AI-powered educational platform.',
+      bullets: [
+        'Improved UI responsiveness and usability by debugging and refining Svelte, HTML, JavaScript, and Tailwind CSS'
+      ],
+    },
+     {
+      year: 'July-Present 2025',
+      title: 'Lead Instructor at Code Ninjas',
+      description: '',
+      bullets: [
+        'Taught 30+ students (ages 6–7) programming and engineering fundamentals using LEGO Robotics, Roblox Studio, Minecraft Redstone, and visual programming tools, designing engaging and age-appropriate lessons.'
+      ],
     },
     {
-      year: '',
-      title: 'Leadership + Extracurriculars',
-      description: 'Held numerous positions in various organizations',
-      bullets: [
+      year: '2021-2025',
+      title: 'Seven Lakes High School',
+      description: 'Ranked 8/887 students | 4.8387 Weighted GPA',
+       bullets: [
         'President of Orchestra & Tri-M',
         'Media Chair of National Honor Society',
         'Historian of CSHS',
@@ -22,6 +33,7 @@ export default function Timeline() {
         'Technology Student Association (Member)',
       ],
     },
+  
     {
       year: '2024-2025',
       title: 'AFS Global STEM Academies Scholar',

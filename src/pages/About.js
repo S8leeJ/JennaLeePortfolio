@@ -133,7 +133,7 @@ export default function About() {
                   Experience
                 </h2>
                 <p className="text-slate-300 text-lg">
-                  My academic journey and professional experience
+                  My academic journey and professional experience | Learn more in my resume!
                 </p>
               </div>
 

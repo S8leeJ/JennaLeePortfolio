@@ -20,10 +20,11 @@ const projects = [
     image: AllClear,
     shortDescription: 'Real-time emergency response platform for disaster awareness and location safety',
     longDescription:
-      'AllClear is a full-stack web app designed to keep users informed and safe during natural disasters. It allows users to view real-time hazard updates, weather overlays, and share their location with trusted contacts. Built in 36 hours during the Open Summer Hackathon, the app integrates OpenWeatherMap data, multi-hazard overlays using Leaflet.js, and secure user management with JWT-authenticated sessions. The project earned 1st in the Full Stack category among 100+ participants.',
+      'AllClear is a full-stack web app designed to keep users informed and safe during natural disasters. It allows users to view real-time hazard updates, weather overlays, and share their location with trusted contacts. Built in 36 hours during the Open Summer Hackathon, the app integrates OpenWeatherMap data, multi-hazard overlays using Leaflet.js, and secure user management with JWT-authenticated sessions. The project earned 1st in the Full Stack category among 95+ participants.',
     tech: ['React', 'Node.js', 'MongoDB', 'OpenWeatherMap API', 'Leaflet.js'],
     github: 'https://github.com/S8leeJ/allclear',
     demo: 'https://www.youtube.com/watch?v=oH4qrkiLmvw',
+    port: 'https://summeropen2025.com/winners',
     videoUrl: AllClearVid
 
   },
