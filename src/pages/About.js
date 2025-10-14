@@ -92,14 +92,14 @@ export default function About() {
                   <span>View Experience</span>
                 </button>
 
-                <a
+                {/* <a
                   href={resume}
                   download
                   className="btn-secondary flex items-center gap-3 group"
                 >
                   <FaFileDownload className="group-hover:scale-110 transition-transform" />
                   <span>Download Resume</span>
-                </a>
+                </a> */}
 
                 <a
                   href="/contact"
