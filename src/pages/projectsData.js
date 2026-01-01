@@ -13,7 +13,7 @@ import Ver from '../Images/Ver.png';
 import AllClear from '../Images/AllClear.png'
 import AllClearVid from '../Images/AllClear.mov'
 import stellar from '../Images/stellar.png'
-//import SkyPocket from '../Images/Skypocket.mov'
+import SkyPocket from '../Images/Skypocket.mov'
 import skypocketImg from '../Images/SkyPocket.png'
 
 const projects = [
@@ -27,7 +27,7 @@ const projects = [
     tech: ['React Native with Expo', 'TypeScript', 'Tailwind CSS', 'Firebase'],
     github: 'https://github.com/S8leeJ/DAM-Travel',
     port: 'https://docs.google.com/presentation/d/1-DgD4a0Szwinw-PAtViCE4ILsjR7jBoo8RYKnGdETfc/edit?usp=sharing',
-    videoUrl: skypocketImg
+    videoUrl: SkyPocket
   },
   {
     title: 'AllClear – Emergency Response App',
