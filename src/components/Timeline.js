@@ -1,20 +1,31 @@
 export default function Timeline() {
   const events = [
     {
-      year: '2025',
-      title: 'Started at UT Austin',
-      description: 'Began studying Computer Science, more to come!',
+      year: 'September-Present',
+      title: 'Texas Convergent – Digital Arts and Media Tech Member',
+      description: 'Engineering full-stack AI applications in an agile startup incubator, collaborating with product and design teams',
+      bullets: [
+        'Developing an AI-based currency analyzer with multilingual and budgeting tools for 1,000+ global users'
+      ],
     },
     {
-      year: 'July-Present 2025',
+      year: 'September-Present',
+      title: 'Texas Product Engineering Organization – Engineering Fellow',
+      description: 'Selected as 1 of 10 (out of 170+) fellows to develop novel, nonprofit software solutions across the Austin community',
+      bullets: [
+        'Completed an intensive 10-week full-stack curriculum covering Git, JavaScript, React, Node.js, and system design'
+      ],
+    },
+    {
+      year: 'July-August 2025',
       title: 'Frontend Developer at Stellar Learning',
       description: 'Built and optimized scalable, intuitive front-end features for an AI-powered educational platform.',
       bullets: [
         'Improved UI responsiveness and usability by debugging and refining Svelte, HTML, JavaScript, and Tailwind CSS'
       ],
     },
-     {
-      year: 'July-Present 2025',
+    {
+      year: 'July-August 2025',
       title: 'Lead Instructor at Code Ninjas',
       description: '',
       bullets: [
@@ -25,7 +36,7 @@ export default function Timeline() {
       year: '2021-2025',
       title: 'Seven Lakes High School',
       description: 'Ranked 8/887 students | 4.8387 Weighted GPA',
-       bullets: [
+      bullets: [
         'President of Orchestra & Tri-M',
         'Media Chair of National Honor Society',
         'Historian of CSHS',
@@ -33,7 +44,7 @@ export default function Timeline() {
         'Technology Student Association (Member)',
       ],
     },
-  
+
     {
       year: '2024-2025',
       title: 'AFS Global STEM Academies Scholar',
@@ -59,12 +70,12 @@ export default function Timeline() {
       <div className="relative">
         {/* Timeline Line */}
         <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 to-blue-600" />
-        
+
         {events.map((event, index) => (
           <div key={index} className="relative mb-8 ml-12 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
             {/* Timeline Dot */}
             <div className="absolute -left-8 top-2 w-5 h-5 bg-blue-400 rounded-full border-3 border-slate-900 shadow-lg" />
-            
+
             {/* Content Card */}
             <div className="modern-card p-5">
               {event.year && (
@@ -72,11 +83,11 @@ export default function Timeline() {
                   {event.year}
                 </div>
               )}
-              
+
               <h3 className="font-outfit text-xl font-semibold mb-3 text-white">
                 {event.title}
               </h3>
-              
+
               {event.description && (
                 <p className="text-slate-300 text-sm leading-relaxed mb-4">
                   {event.description}

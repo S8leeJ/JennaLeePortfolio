@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import profileImg from '../Images/profile.png'; // adjust path as needed
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import resume from '../Images/JennaLeeResume.pdf';
 
 import Timeline from '../components/Timeline.js';
-import { FaEnvelope, FaLinkedin, FaFileDownload, FaGithub, FaTimes, FaHistory, FaFileAlt } from 'react-icons/fa';
+import { FaEnvelope,FaTimes, FaHistory, FaPalette, FaCode, FaServer, FaJava, FaHashtag } from 'react-icons/fa';
+import { SiReact, SiJavascript, SiExpress, SiCplusplus, SiR, SiPython } from 'react-icons/si';
 
 export default function About() {
   const [showExperienceModal, setShowExperienceModal] = useState(false);
@@ -17,10 +15,10 @@ export default function About() {
           <h1 className="font-outfit text-6xl md:text-7xl font-bold mb-6 text-blue-300">
             About Me
           </h1>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          {/* <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
             A passionate Computer Science student merging design and code to build intuitive,
             user-focused digital experiences.
-          </p>
+          </p> */}
         </div>
 
         {/* About Me Section - Full Width */}
@@ -41,43 +39,55 @@ export default function About() {
 
             <div className="space-y-6">
               <p className="text-slate-300 leading-relaxed">
-                I'm passionate about UI/UX, front-end development, and using technology to support
-                education, sustainability, and social impact. My approach combines technical expertise
-                with creative problem-solving to deliver exceptional user experiences.
+                As a full-stack developer with experience across mobile, web, and cloud technologies, I've learned that the best technology 
+                is the kind people don't have to think about. What really drives me is creating interfaces that
+                feel effortless to use—and working on projects that matter beyond the code, especially around
+                social impact and accessibility.
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <SiReact />
                   React
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <SiJavascript />
                   JavaScript
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <FaJava />
                   Java
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <SiExpress />
                   Express.js
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <FaHashtag />
                   C#
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <SiCplusplus />
                   C++
                 </span>
-                  <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <SiR />
                   R
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <SiPython />
                   Python
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <FaPalette />
                   UI/UX Design
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <FaCode />
                   Front-end Development
                 </span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium flex items-center gap-2">
+                  <FaServer />
                   Back-end Development
                 </span>
               </div>
@@ -133,7 +143,7 @@ export default function About() {
                   Experience
                 </h2>
                 <p className="text-slate-300 text-lg">
-                  My academic journey and professional experience | Learn more in my resume!
+                  My academic journey and professional experience 
                 </p>
               </div>
 

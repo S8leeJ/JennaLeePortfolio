@@ -11,10 +11,10 @@ export default function Home() {
             <span className="title-text"> Lee</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 font-light mb-4">
-            Computer Science Student at UT Austin
+            Software Engineer
           </p>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Hey, I'm Jenna, it is nice to meet you! I love combining technical expertise with creative problem-solving to deliver exceptional user experiences.
+            Hey, I'm Jenna, it is nice to meet you! I am currently studying Computer Science at the University of Texas at Austin.
           </p>
         </div>
 

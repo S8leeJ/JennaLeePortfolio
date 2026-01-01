@@ -13,8 +13,22 @@ import Ver from '../Images/Ver.png';
 import AllClear from '../Images/AllClear.png'
 import AllClearVid from '../Images/AllClear.mov'
 import stellar from '../Images/stellar.png'
+//import SkyPocket from '../Images/Skypocket.mov'
+import skypocketImg from '../Images/SkyPocket.png'
 
 const projects = [
+  {
+    title: 'SkyPocket – Mobile Travel Companion',
+    date: 'September-December 2025',
+    image: skypocketImg,
+    shortDescription: 'An Intelligent Travel Companion for Shopping & Budgeting Abroad',
+    longDescription:
+      'Built SkyPocket as a travel companion app that helps with trip planning, expense tracking, and shopping abroad. It converts currencies in real-time, uses Google Vision to identify products and compare prices across regions, and keeps everything organized through a finance dashboard. The React Native frontend talks to a Firebase backend that handles 500+ requests with sub-second response times, and the modular setup made it easy to scale up to supporting 20+ simultaneous trips.',
+    tech: ['React Native with Expo', 'TypeScript', 'Tailwind CSS', 'Firebase'],
+    github: 'https://github.com/S8leeJ/DAM-Travel',
+    port: 'https://docs.google.com/presentation/d/1-DgD4a0Szwinw-PAtViCE4ILsjR7jBoo8RYKnGdETfc/edit?usp=sharing',
+    videoUrl: skypocketImg
+  },
   {
     title: 'AllClear – Emergency Response App',
     date: 'July 2025',
@@ -28,16 +42,16 @@ const projects = [
     port: 'https://summeropen2025.com/winners',
     videoUrl: AllClearVid
   },
-   {
+  {
     title: 'Stellar Learning',
     date: 'July - Present',
     image: stellar,
     shortDescription: 'Frontend Developer at Stellar - a completely free AI-powered intuitive, gamified, and interactive learning experience',
     longDescription:
-      'Stellar Learning is a cutting-edge educational platform that leverages AI to provide personalized learning experiences. As a Frontend Developer, I am responsible for creating engaging user interfaces and interactive features that enhance the learning journey for students. The platform incorporates gamification elements to motivate learners and track their progress in real-time.',
+      'Stellar Learning is a cutting-edge educational platform that leverages AI to provide personalized learning experiences. As a Frontend Developer, I Built and optimized scalable front-end systems for an AI-powered educational platform used by 8,000+ users. I am responsible for creating engaging user interfaces and interactive features that enhance the learning journey for students. The platform incorporates gamification elements to motivate learners and track their progress in real-time.',
     tech: ['Svelte', 'HTML', 'Tailwind CSS', 'TypeScript'],
     demo: 'https://stellarlearning.app/',
-   },
+  },
   {
     title: 'Kingdom Builder',
     image: kingdom,
