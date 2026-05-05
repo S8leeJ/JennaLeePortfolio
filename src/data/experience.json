@@ -1,0 +1,38 @@
+[
+  {
+    "when": "Sep 2025 — Present",
+    "role": "Engineering Fellow",
+    "org": "Texas Product Engineering Organization",
+    "detail": "1 of 10 fellows selected from 170+ to develop nonprofit software solutions across Austin. Completed an intensive 10-week full-stack curriculum: Git, JavaScript, React, Node.js, system design."
+  },
+  {
+    "when": "Sep 2025 — Present",
+    "role": "Digital Arts & Media Tech Member",
+    "org": "Texas Convergent",
+    "detail": "Engineering full-stack AI applications in an agile startup incubator. Developing an AI-based currency analyzer with multilingual and budgeting tools for 1,000+ global users."
+  },
+  {
+    "when": "Jul — Aug 2025",
+    "role": "Frontend Developer",
+    "org": "Stellar Learning",
+    "detail": "Built and optimized scalable, intuitive front-end features for an AI-powered educational platform. Improved UI responsiveness by debugging Svelte, HTML, JavaScript, and Tailwind CSS."
+  },
+  {
+    "when": "Jul — Aug 2025",
+    "role": "Lead Instructor",
+    "org": "Code Ninjas",
+    "detail": "Taught 30+ students (ages 6–7) programming and engineering fundamentals using LEGO Robotics, Roblox Studio, Minecraft Redstone, and visual programming."
+  },
+  {
+    "when": "2024 — 2025",
+    "role": "Global STEM Scholar",
+    "org": "AFS Global STEM Academies",
+    "detail": "Scholarship for a 12-week virtual + 4-week Brazil exchange. Earned the Advanced Certificate on Global Competence for Social Impact (UPenn Center for Social Impact Strategy). First-place anti-river-erosion project, presented at BP."
+  },
+  {
+    "when": "2021 — 2025",
+    "role": "High School",
+    "org": "Seven Lakes High School",
+    "detail": "Ranked 8/887 · 4.84 weighted GPA. Orchestra & Tri-M President. NHS Media Chair. CSHS Historian. Robotics Awards Director."
+  }
+]

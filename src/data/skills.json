@@ -1,0 +1,14 @@
+[
+  {
+    "group": "Languages",
+    "items": ["JavaScript / TypeScript", "Python", "Java", "C#", "C++", "R"]
+  },
+  {
+    "group": "Frameworks",
+    "items": ["React", "React Native", "Svelte", "Node.js / Express", "Unity"]
+  },
+  {
+    "group": "Craft",
+    "items": ["UI / UX Design", "Frontend systems", "Full-stack", "Accessibility"]
+  }
+]

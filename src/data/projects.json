@@ -1,0 +1,106 @@
+[
+  {
+    "id": "skypocket",
+    "num": "01",
+    "title": "SkyPocket",
+    "tagline": "Intelligent travel companion for shopping & budgeting abroad",
+    "year": "2025",
+    "role": "Full-stack",
+    "image": "/projects/skypocket.png",
+    "description": "A travel companion app for trip planning, expense tracking, and shopping abroad. Real-time currency conversion, Google Vision product identification, and price comparison across regions — wrapped in a finance dashboard that scales to 20+ simultaneous trips.",
+    "metrics": [
+      { "value": "500+", "label": "requests handled" },
+      { "value": "<1s", "label": "response time" },
+      { "value": "20+", "label": "trips supported" }
+    ],
+    "tech": ["React Native", "Expo", "TypeScript", "Tailwind", "Firebase"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/DAM-Travel" },
+      { "label": "Case study", "href": "https://docs.google.com/presentation/d/1-DgD4a0Szwinw-PAtViCE4ILsjR7jBoo8RYKnGdETfc/edit?usp=sharing" }
+    ]
+  },
+  {
+    "id": "allclear",
+    "num": "02",
+    "title": "AllClear",
+    "tagline": "Real-time emergency response platform for disaster awareness",
+    "year": "2025",
+    "role": "Full-stack · Hackathon",
+    "image": "/projects/allclear.png",
+    "description": "A web app that keeps users informed during natural disasters — real-time hazard updates, weather overlays, and trusted-contact location sharing. Built in 36 hours during the Open Summer Hackathon, integrating OpenWeatherMap data, multi-hazard Leaflet overlays, and JWT-authenticated sessions.",
+    "metrics": [
+      { "value": "1st", "label": "Full Stack category" },
+      { "value": "95+", "label": "participants" },
+      { "value": "36h", "label": "build time" }
+    ],
+    "tech": ["React", "Node.js", "MongoDB", "OpenWeatherMap", "Leaflet.js"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/allclear" },
+      { "label": "Demo video", "href": "https://www.youtube.com/watch?v=oH4qrkiLmvw" },
+      { "label": "Winners page", "href": "https://summeropen2025.com/winners" }
+    ]
+  },
+  {
+    "id": "stellar",
+    "num": "03",
+    "title": "Stellar Learning",
+    "tagline": "Frontend at a free, AI-powered learning platform",
+    "year": "2025 — present",
+    "role": "Frontend Developer",
+    "image": "/projects/stellar.png",
+    "description": "Built and optimized scalable front-end systems for an AI-powered educational platform serving 8,000+ users. Engaging interfaces and interactive features that motivate learners and track progress in real time, with gamified mechanics throughout.",
+    "metrics": [
+      { "value": "8,000+", "label": "active users" },
+      { "value": "Live", "label": "in production" }
+    ],
+    "tech": ["Svelte", "TypeScript", "Tailwind", "HTML"],
+    "links": [
+      { "label": "Visit site", "href": "https://stellarlearning.app/" }
+    ]
+  },
+  {
+    "id": "kingdom",
+    "num": "04",
+    "title": "Kingdom Builder",
+    "tagline": "Java strategy board game with full game logic",
+    "year": "2024",
+    "role": "Solo build",
+    "image": "/projects/kingdom.png",
+    "description": "A complete digital adaptation of the strategy board game. Java AWT and Swing power the interactive GUI — card drawing, settlement placement, terrain highlighting, endgame scoring — with full turn-state handling and dynamic rendering across rounds.",
+    "tech": ["Java", "AWT/Swing", "OOP"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/KingdomBuilder-EJJ" },
+      { "label": "Write-up", "href": "https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing" }
+    ]
+  },
+  {
+    "id": "osaka",
+    "num": "05",
+    "title": "Osaka Dash",
+    "tagline": "Unity RPG — explore the city, complete quests, learn culture",
+    "year": "2024",
+    "role": "Game Dev (team)",
+    "image": "/projects/osaka.png",
+    "description": "An immersive Unity RPG blending exploration, historical education, and minigames. Players navigate Osaka, complete quests from NPCs, and learn about cultural landmarks, transit systems, and city navigation along the way.",
+    "tech": ["Unity", "C#", "Tilemaps", "Cinemachine", "Animation Controller"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/UnityGroupProject" }
+    ]
+  },
+  {
+    "id": "azul",
+    "num": "06",
+    "title": "Azul Tile",
+    "tagline": "Java recreation of Azul with interactive tile mechanics",
+    "year": "2024",
+    "role": "Pair build",
+    "image": "/projects/azul.png",
+    "description": "A complete digital adaptation of the strategic board game Azul, built from scratch in Java. AWT and Swing power the interactive GUI — full game logic, tile drafting, wall patterns, and endgame scoring.",
+    "tech": ["Java", "AWT/Swing", "OOP"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/EvuhLi/AzulTile" },
+      { "label": "Write-up", "href": "https://docs.google.com/document/d/1428-xlBuNChgJ9U-SDOi1Q7OlDibVh58wX4jslP0Fn0/edit?usp=sharing" }
+    ]
+  }
+
+]
