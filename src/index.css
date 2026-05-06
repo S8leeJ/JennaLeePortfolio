@@ -222,10 +222,15 @@ body::before {
   font-family: inherit;
 }
 .btn-primary {
-  background: var(--ink);
-  color: var(--paper);
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
 }
-.btn-primary:hover { background: var(--accent); }
+.btn-primary:hover {
+  background: #ffffff;
+  color: var(--paper);
+  border-color: #ffffff;
+}
 .btn-ghost {
   background: transparent;
   color: var(--ink);

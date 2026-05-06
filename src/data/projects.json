@@ -6,7 +6,7 @@
     "tagline": "Indoor/outdoor campus navigation with autonomous routing",
     "year": "2026",
     "role": "Technical Lead · Full-stack",
-    "image": "/projects/wavepoint.png",
+    "image": "/projects/Wavepoint.png",
     "description": "A full-stack campus navigation platform combining React Native, Expo, Supabase, and custom Python computer vision pipelines to deliver indoor/outdoor routing, accessibility-focused navigation, live friend tracking, and event coordination. ",
     "metrics": [
       { "value": "Best Tech", "label": "Convergent Demo Day" },
@@ -26,7 +26,7 @@
     "tagline": "Intelligent travel companion for shopping & budgeting abroad",
     "year": "2025",
     "role": "Full-stack",
-    "image": "/projects/Skypocket.png",
+    "image": "/projects/skypocket.png",
     "description": "A travel companion app for trip planning, expense tracking, and shopping abroad. Real-time currency conversion, Google Vision product identification, and price comparison across regions — wrapped in a finance dashboard that scales to 20+ simultaneous trips.",
     "metrics": [
       { "value": "500+", "label": "requests handled" },
