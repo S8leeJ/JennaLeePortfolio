@@ -1,14 +1,14 @@
 [
   {
     "group": "Languages",
-    "items": ["JavaScript / TypeScript", "Python", "Java", "C#", "C++", "R"]
+    "items": ["JavaScript / TypeScript", "Python", "Java", "C#", "C++", "R", "SQL", "HTML", "CSS"]
   },
   {
     "group": "Frameworks",
-    "items": ["React", "React Native", "Svelte", "Node.js / Express", "Unity"]
+    "items": ["React", "Next.js", "React Native", "Svelte", "Node.js / Express", "Tailwind CSS", "Unity", "Supabase", "OpenCV"]
   },
   {
-    "group": "Craft",
-    "items": ["UI / UX Design", "Frontend systems", "Full-stack", "Accessibility"]
+    "group": "Tools & Platforms",
+    "items": ["AWS", "Linux", "GitHub", "AWS Certified Cloud Practitioner (2025)", "Unity Certified Programmer (2024)"]
   }
 ]

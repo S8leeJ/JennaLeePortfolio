@@ -1,4 +1,24 @@
 [
+    {
+    "id": "wavepoint",
+    "num": "03",
+    "title": "WavePoint",
+    "tagline": "Indoor/outdoor campus navigation with autonomous routing",
+    "year": "2026",
+    "role": "Technical Lead · Full-stack",
+    "image": "/projects/wavepoint.png",
+    "description": "A full-stack campus navigation platform combining React Native, Expo, Supabase, and custom Python computer vision pipelines to deliver indoor/outdoor routing, accessibility-focused navigation, live friend tracking, and event coordination. ",
+    "metrics": [
+      { "value": "Best Tech", "label": "Convergent Demo Day" },
+      { "value": "4 mo", "label": "development timeline" },
+      { "value": "Cross-platform", "label": "iOS + Android" }
+    ],
+    "tech": ["React Native", "Expo", "TypeScript", "Supabase", "Python", "OpenCV", "MapLibre", "OSRM"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/Srikrishnabalaji/ConvergentS26" },
+      { "label": "Presentation", "href": "https://canva.link/pna1jl87olqtegt" }
+    ]
+  },
   {
     "id": "skypocket",
     "num": "01",
@@ -6,7 +26,7 @@
     "tagline": "Intelligent travel companion for shopping & budgeting abroad",
     "year": "2025",
     "role": "Full-stack",
-    "image": "/projects/skypocket.png",
+    "image": "/projects/Skypocket.png",
     "description": "A travel companion app for trip planning, expense tracking, and shopping abroad. Real-time currency conversion, Google Vision product identification, and price comparison across regions — wrapped in a finance dashboard that scales to 20+ simultaneous trips.",
     "metrics": [
       { "value": "500+", "label": "requests handled" },
@@ -41,16 +61,76 @@
     ]
   },
   {
+    "id": "usherbot",
+    "num": "04",
+    "title": "UsherBot",
+    "tagline": "Autonomous ROS2 robot for real-world indoor ushering",
+    "year": "2026",
+    "role": "Undergraduate Researcher",
+    "image": "/projects/FRI.png",
+    "description": "An autonomous ushering platform integrating a Next.js reservation system with a ROS2/Nav2 mobile robot that physically escorts users to reserved seats. Built distributed infrastructure using Supabase-backed message queues, concurrent Python ROS2 nodes, and real-time navigation telemetry synchronized across isolated lab networks.",
+    "metrics": [
+      { "value": "ROS2", "label": "robotics stack" },
+      { "value": "Real-time", "label": "navigation telemetry" },
+      { "value": "Multi-device", "label": "reservation system" }
+    ],
+    "tech": ["Next.js", "React", "TypeScript", "Python", "ROS2", "Nav2", "Supabase", "PostgreSQL"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/UsherBot" },
+      { "label": "Research paper", "href": "https://drive.google.com/file/d/1tVTzq3L2ES-swcTHzakwa-OOxxr2ooTR/view?usp=sharing" }
+    ]
+  },
+  {
+    "id": "excel-dell",
+    "num": "05",
+    "title": "Excel with Dell",
+    "tagline": "Enterprise AI analytics platform for customer feedback",
+    "year": "2026",
+    "role": "Full-stack · Case Competition",
+    "image": "/projects/Dell.png",
+    "description": "Selected as 1 of 51 students in Dell’s technical case competition to design enterprise AI analytics solutions. Built an end-to-end NLP pipeline using topic modeling and sentiment analysis, paired with an interactive React dashboard for KPI visualization and customer feedback exploration.",
+    "metrics": [
+      { "value": "Top 51", "label": "out of 325+ students" },
+      { "value": "2 yrs", "label": "feedback analyzed" },
+      { "value": "Interactive", "label": "analytics dashboard" }
+    ],
+    "tech": ["Python", "React", "Recharts", "Vite", "NLP", "LDA", "Sentiment Analysis"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/Excel-with-dell" },
+      { "label": "Live demo", "href": "https://excel-with-dell.vercel.app/" },
+      { "label": "Presentation", "href": "https://canva.link/b0tuc402p8fdr4l" }
+    ]
+  },
+  {
+    "id": "wamplus",
+    "num": "06",
+    "title": "Wamp+",
+    "tagline": "Interactive housing and apartment discovery platform",
+    "year": "2026",
+    "role": "Full-stack",
+    "image": "/projects/Wamplus.png",
+    "description": "A full-stack apartment housing platform designed to streamline student housing discovery with interactive maps, real-time leasing visualization, and dynamic filtering across 35+ apartment listings. Built scalable backend infrastructure with PostgreSQL and Supabase.",
+    "metrics": [
+      { "value": "35+", "label": "apartments indexed" },
+      { "value": "Real-time", "label": "leasing visualization" }
+    ],
+    "tech": ["Next.js", "Tailwind CSS", "MapLibre", "Supabase", "PostgreSQL"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/Wamplus" },
+      { "label": "Live site", "href": "https://wamplus.vercel.app/" }
+    ]
+  },
+  {
     "id": "stellar",
-    "num": "03",
+    "num": "07",
     "title": "Stellar Learning",
     "tagline": "Frontend at a free, AI-powered learning platform",
     "year": "2025 — present",
     "role": "Frontend Developer",
     "image": "/projects/stellar.png",
-    "description": "Built and optimized scalable front-end systems for an AI-powered educational platform serving 8,000+ users. Engaging interfaces and interactive features that motivate learners and track progress in real time, with gamified mechanics throughout.",
+    "description": "Built and optimized scalable front-end systems for an AI-powered educational platform serving 25,000+ users. Developed engaging interfaces, gamified learning mechanics, and real-time progress tracking features to improve user retention and learning experience.",
     "metrics": [
-      { "value": "8,000+", "label": "active users" },
+      { "value": "25,000+", "label": "active users" },
       { "value": "Live", "label": "in production" }
     ],
     "tech": ["Svelte", "TypeScript", "Tailwind", "HTML"],
@@ -58,49 +138,43 @@
       { "label": "Visit site", "href": "https://stellarlearning.app/" }
     ]
   },
-  {
-    "id": "kingdom",
-    "num": "04",
-    "title": "Kingdom Builder",
-    "tagline": "Java strategy board game with full game logic",
-    "year": "2024",
-    "role": "Solo build",
-    "image": "/projects/kingdom.png",
-    "description": "A complete digital adaptation of the strategy board game. Java AWT and Swing power the interactive GUI — card drawing, settlement placement, terrain highlighting, endgame scoring — with full turn-state handling and dynamic rendering across rounds.",
-    "tech": ["Java", "AWT/Swing", "OOP"],
-    "links": [
-      { "label": "GitHub", "href": "https://github.com/S8leeJ/KingdomBuilder-EJJ" },
-      { "label": "Write-up", "href": "https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing" }
-    ]
-  },
-  {
+   {
     "id": "osaka",
-    "num": "05",
+    "num": "09",
     "title": "Osaka Dash",
     "tagline": "Unity RPG — explore the city, complete quests, learn culture",
     "year": "2024",
     "role": "Game Dev (team)",
     "image": "/projects/osaka.png",
     "description": "An immersive Unity RPG blending exploration, historical education, and minigames. Players navigate Osaka, complete quests from NPCs, and learn about cultural landmarks, transit systems, and city navigation along the way.",
+    "metrics": [
+      { "value": "Open-world", "label": "city exploration" },
+      { "value": "Quest-based", "label": "NPC interactions" },
+      { "value": "Educational", "label": "cultural gameplay" }
+    ],
     "tech": ["Unity", "C#", "Tilemaps", "Cinemachine", "Animation Controller"],
     "links": [
       { "label": "GitHub", "href": "https://github.com/S8leeJ/UnityGroupProject" }
     ]
   },
   {
-    "id": "azul",
-    "num": "06",
-    "title": "Azul Tile",
-    "tagline": "Java recreation of Azul with interactive tile mechanics",
+    "id": "kingdom",
+    "num": "08",
+    "title": "Kingdom Builder",
+    "tagline": "Java strategy board game with full game logic",
     "year": "2024",
-    "role": "Pair build",
-    "image": "/projects/azul.png",
-    "description": "A complete digital adaptation of the strategic board game Azul, built from scratch in Java. AWT and Swing power the interactive GUI — full game logic, tile drafting, wall patterns, and endgame scoring.",
+    "role": "Solo build",
+    "image": "/projects/kingdom.png",
+    "description": "A complete digital adaptation of the strategy board game. Java AWT and Swing power the interactive GUI — card drawing, settlement placement, terrain highlighting, endgame scoring — with full turn-state handling and dynamic rendering across rounds.",
+    "metrics": [
+      { "value": "100%", "label": "gameplay implemented" },
+      { "value": "Turn-based", "label": "state management" },
+      { "value": "Dynamic", "label": "GUI rendering" }
+    ],
     "tech": ["Java", "AWT/Swing", "OOP"],
     "links": [
-      { "label": "GitHub", "href": "https://github.com/EvuhLi/AzulTile" },
-      { "label": "Write-up", "href": "https://docs.google.com/document/d/1428-xlBuNChgJ9U-SDOi1Q7OlDibVh58wX4jslP0Fn0/edit?usp=sharing" }
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/KingdomBuilder-EJJ" },
+      { "label": "Write-up", "href": "https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing" }
     ]
   }
-
 ]

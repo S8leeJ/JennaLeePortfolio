@@ -1,5 +1,23 @@
 [
   {
+    "when": "Jan 2026 — Present",
+    "role": "Software Engineer",
+    "org": "Todd Agriscience",
+    "detail": "Building hyper-intelligent mentors and AI research platforms for sustainable agriculture. "
+  },
+  {
+    "when": "Jan 2026 — Present",
+    "role": "Undergraduate Researcher",
+    "org": "Learning Agents Research Group, UT Austin",
+    "detail": "Architecting an autonomous ushering platform fusing Next.js/Supabase reservations with a ROS2/Nav2 BWI robot."
+  },
+  {
+    "when": "Feb — Apr 2026",
+    "role": "Excel with Dell Member",
+    "org": "Dell Technologies",
+    "detail": "Selected as 1 of 51 (from 325+) for Dell's technical case competition, built a Python NLP pipeline (LDA topic modeling + sentiment scoring)"
+  },
+  {
     "when": "Sep 2025 — Present",
     "role": "Engineering Fellow",
     "org": "Texas Product Engineering Organization",
@@ -7,15 +25,15 @@
   },
   {
     "when": "Sep 2025 — Present",
-    "role": "Digital Arts & Media Tech Member",
+    "role": "Tech and Design Member",
     "org": "Texas Convergent",
-    "detail": "Engineering full-stack AI applications in an agile startup incubator. Developing an AI-based currency analyzer with multilingual and budgeting tools for 1,000+ global users."
+    "detail": "Engineering full-stack AI applications in an agile startup incubator."
   },
   {
-    "when": "Jul — Aug 2025",
-    "role": "Frontend Developer",
+    "when": "Jun — Aug 2025",
+    "role": "Software Engineer",
     "org": "Stellar Learning",
-    "detail": "Built and optimized scalable, intuitive front-end features for an AI-powered educational platform. Improved UI responsiveness by debugging Svelte, HTML, JavaScript, and Tailwind CSS."
+    "detail": "Built scalable front-end features for an AI-powered educational platform used by 25,000+ users."
   },
   {
     "when": "Jul — Aug 2025",

@@ -7,37 +7,60 @@ import SKILL_GROUPS from '../data/skills.json';
 
 const resumePdf = '/resume.pdf';
 
-function Nav({ onJump }) {
-  const [scrolled, setScrolled] = useState(false);
+const JOURNEY_STOPS = [
+  { id: 'top', label: 'Start' },
+  { id: 'work', label: 'Work' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'contact', label: 'Contact' },
+];
+
+function JourneyPath({ onJump }) {
+  const [active, setActive] = useState('top');
+
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive(e.target.id);
+        });
+      },
+      { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+    );
+    JOURNEY_STOPS.forEach((s) => {
+      const el = document.getElementById(s.id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
   }, []);
-  const links = [
-    { id: 'work', label: 'Work' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'contact', label: 'Contact' },
-  ];
+
+  const activeIndex = Math.max(
+    0,
+    JOURNEY_STOPS.findIndex((s) => s.id === active)
+  );
+  const progress = JOURNEY_STOPS.length > 1
+    ? (activeIndex / (JOURNEY_STOPS.length - 1)) * 100
+    : 0;
+
   return (
-    <nav className={`site-nav ${scrolled ? 'scrolled' : ''}`}>
-      <div className="nav-inner">
-        <a href="#top" className="nav-logo" onClick={(e) => { e.preventDefault(); onJump('top'); }}>
-          <span className="nav-logo-text">Jenna Lee</span>
-        </a>
-        <ul className="nav-links">
-          {links.map((l) => (
-            <li key={l.id}>
-              <a href={`#${l.id}`} onClick={(e) => { e.preventDefault(); onJump(l.id); }}>
-                {l.label}
-              </a>
+    <nav className="journey" aria-label="Page sections">
+      <ol className="journey-path" style={{ '--journey-progress': `${progress}%` }}>
+        {JOURNEY_STOPS.map((s) => {
+          const isActive = s.id === active;
+          const idx = JOURNEY_STOPS.findIndex((x) => x.id === s.id);
+          const isPast = idx < activeIndex;
+          return (
+            <li
+              key={s.id}
+              className={`journey-node ${isActive ? 'active' : ''} ${isPast ? 'past' : ''}`}
+            >
+              <button type="button" onClick={() => onJump(s.id)} aria-label={`Jump to ${s.label}`}>
+                <span className="journey-dot" aria-hidden />
+                <span className="journey-label">{s.label}</span>
+              </button>
             </li>
-          ))}
-        </ul>
-        <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="nav-cta">
-          Résumé <span aria-hidden>↗</span>
-        </a>
-      </div>
+          );
+        })}
+      </ol>
     </nav>
   );
 }
@@ -62,7 +85,7 @@ function Hero() {
         </p>
         <div className="hero-actions">
           <a className="btn btn-primary" href="#work">See selected work <span aria-hidden>→</span></a>
-          <a className="btn btn-ghost" href="mailto:jenna.snow.lee@gmail.com">Get in touch</a>
+          <a className="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
       </div>
       <div className="hero-skills">
@@ -139,8 +162,9 @@ function ProjectRow({ p, idx }) {
 }
 
 function CompactCard({ p }) {
+  const [expanded, setExpanded] = useState(false);
   return (
-    <article className="compact-card">
+    <article className={`compact-card ${expanded ? 'expanded' : ''}`}>
       <div className="compact-media">
         <img src={p.image} alt={p.title} loading="lazy" />
       </div>
@@ -151,14 +175,40 @@ function CompactCard({ p }) {
         </div>
         <h4>{p.title}</h4>
         <p>{p.tagline}</p>
+        {expanded && (
+          <div className="compact-details">
+            {p.description && <p className="compact-desc">{p.description}</p>}
+            {p.metrics && p.metrics.length > 0 && (
+              <div className="compact-metrics">
+                {p.metrics.map((m, i) => (
+                  <div key={i} className="compact-metric">
+                    <span className="compact-metric-value">{m.value}</span>
+                    <span className="compact-metric-label">{m.label}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
         <ul className="compact-tech">
-          {p.tech.slice(0, 3).map((t) => <li key={t}>{t}</li>)}
-          {p.tech.length > 3 && <li>+{p.tech.length - 3}</li>}
+          {(expanded ? p.tech : p.tech.slice(0, 3)).map((t) => <li key={t}>{t}</li>)}
+          {!expanded && p.tech.length > 3 && <li>+{p.tech.length - 3}</li>}
         </ul>
-        <div className="compact-links">
-          {p.links.map((l, i) => (
-            <a key={i} href={l.href} target="_blank" rel="noopener noreferrer">{l.label} ↗</a>
-          ))}
+        <div className="compact-actions">
+          <button
+            type="button"
+            className="compact-toggle"
+            onClick={() => setExpanded((v) => !v)}
+            aria-expanded={expanded}
+          >
+            {expanded ? 'Less' : 'More'}
+            <span className={`compact-chev ${expanded ? 'open' : ''}`} aria-hidden>↓</span>
+          </button>
+          <div className="compact-links">
+            {p.links.map((l, i) => (
+              <a key={i} href={l.href} target="_blank" rel="noopener noreferrer">{l.label} ↗</a>
+            ))}
+          </div>
         </div>
       </div>
     </article>
@@ -166,7 +216,6 @@ function CompactCard({ p }) {
 }
 
 function Work({ projects }) {
-  const [showAll, setShowAll] = useState(false);
   const featured = projects.slice(0, 3);
   const more = projects.slice(3);
   return (
@@ -175,30 +224,10 @@ function Work({ projects }) {
       <div className="project-list">
         {featured.map((p, i) => <ProjectRow key={p.id} p={p} idx={i} />)}
       </div>
-      {!showAll && (
-        <div className="reveal-row">
-          <button className="btn btn-ghost" onClick={() => setShowAll(true)}>
-            Show {more.length} more projects <span aria-hidden>↓</span>
-          </button>
+      {more.length > 0 && (
+        <div className="project-grid">
+          {more.map((p) => <CompactCard key={p.id} p={p} />)}
         </div>
-      )}
-      {showAll && (
-        <>
-          <div className="project-grid">
-            {more.map((p) => <CompactCard key={p.id} p={p} />)}
-          </div>
-          <div className="reveal-row">
-            <button
-              className="btn btn-ghost"
-              onClick={() => {
-                setShowAll(false);
-                document.getElementById('work').scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }}
-            >
-              Show less <span aria-hidden>↑</span>
-            </button>
-          </div>
-        </>
       )}
     </section>
   );
@@ -232,8 +261,7 @@ function Contact() {
       <div className="contact-inner">
         <SectionHeader eyebrow="Get in touch" title="Contact." />
         <p className="contact-sub">
-          Open to summer 2026 internships, collaborations, and the occasional board-game-rebuild commission.
-          Fastest reply by email.
+          Reach out for collaborations, questions, or just to say hi! I'm always open to connecting and chatting.
         </p>
         <div className="contact-grid">
           <a href="mailto:jenna.snow.lee@gmail.com" className="contact-card">
@@ -283,7 +311,7 @@ export default function Home() {
 
   return (
     <>
-      <Nav onJump={jump} />
+      <JourneyPath onJump={jump} />
       <main>
         <Hero />
         <Work projects={PROJECTS} />
