@@ -1,7 +1,7 @@
 [
     {
     "id": "wavepoint",
-    "num": "03",
+    "num": "01",
     "title": "WavePoint",
     "tagline": "Indoor/outdoor campus navigation with autonomous routing",
     "year": "2026",
@@ -21,7 +21,7 @@
   },
   {
     "id": "skypocket",
-    "num": "01",
+    "num": "02",
     "title": "SkyPocket",
     "tagline": "Intelligent travel companion for shopping & budgeting abroad",
     "year": "2025",
