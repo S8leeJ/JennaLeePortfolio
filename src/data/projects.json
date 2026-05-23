@@ -20,25 +20,26 @@
     ]
   },
   {
-    "id": "skypocket",
-    "num": "02",
-    "title": "SkyPocket",
-    "tagline": "Intelligent travel companion for shopping & budgeting abroad",
-    "year": "2025",
-    "role": "Full-stack",
-    "image": "/projects/skypocket.png",
-    "description": "A travel companion app for trip planning, expense tracking, and shopping abroad. Real-time currency conversion, Google Vision product identification, and price comparison across regions — wrapped in a finance dashboard that scales to 20+ simultaneous trips.",
-    "metrics": [
-      { "value": "500+", "label": "requests handled" },
-      { "value": "<1s", "label": "response time" },
-      { "value": "20+", "label": "trips supported" }
-    ],
-    "tech": ["React Native", "Expo", "TypeScript", "Tailwind", "Firebase"],
-    "links": [
-      { "label": "GitHub", "href": "https://github.com/S8leeJ/DAM-Travel" },
-      { "label": "Case study", "href": "https://docs.google.com/presentation/d/1-DgD4a0Szwinw-PAtViCE4ILsjR7jBoo8RYKnGdETfc/edit?usp=sharing" }
-    ]
-  },
+  "id": "sprout",
+  "num": "02",
+  "title": "Sprout",
+  "tagline": "Gamified financial wellness with AI receipt scanning & live markets",
+  "year": "2026",
+  "role": "Full-stack · Hackathon",
+  "image": "/projects/Sprout.png",
+  "description": "A gamified financial wellness platform that turns budgeting into a plant-growth journey. Features an AI receipt scanner using Gemini Vision for multimodal line-item extraction and auto-categorization, a real-time ETF dashboard powered by the Alpaca API with risk-profiled portfolios, and live market open/close detection. Built in 24 hours to win 1st place at Fidelity's FidHacks 2026.",
+  "metrics": [
+    { "value": "1st", "label": "FidHacks 2026" },
+    { "value": "24h", "label": "build time" },
+    { "value": "Real-time", "label": "ETF market data" }
+  ],
+  "tech": ["Next.js", "React", "TypeScript", "Supabase", "Gemini AI", "Alpaca API"],
+  "links": [
+    { "label": "Devpost", "href": "https://devpost.com/software/sprout-y0vz9t"},
+    { "label": "GitHub", "href": "https://github.com/phantomsk/Sprout" },
+    { "label": "Site", "href": "https://sprout-2muf.vercel.app/" }
+  ]
+},
   {
     "id": "allclear",
     "num": "02",
@@ -58,6 +59,26 @@
       { "label": "GitHub", "href": "https://github.com/S8leeJ/allclear" },
       { "label": "Demo video", "href": "https://www.youtube.com/watch?v=oH4qrkiLmvw" },
       { "label": "Winners page", "href": "https://summeropen2025.com/winners" }
+    ]
+  },
+   {
+    "id": "skypocket",
+    "num": "02",
+    "title": "SkyPocket",
+    "tagline": "Intelligent travel companion for shopping & budgeting abroad",
+    "year": "2025",
+    "role": "Full-stack",
+    "image": "/projects/skypocket.png",
+    "description": "A travel companion app for trip planning, expense tracking, and shopping abroad. Real-time currency conversion, Google Vision product identification, and price comparison across regions — wrapped in a finance dashboard that scales to 20+ simultaneous trips.",
+    "metrics": [
+      { "value": "500+", "label": "requests handled" },
+      { "value": "<1s", "label": "response time" },
+      { "value": "20+", "label": "trips supported" }
+    ],
+    "tech": ["React Native", "Expo", "TypeScript", "Tailwind", "Firebase"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/DAM-Travel" },
+      { "label": "Case study", "href": "https://docs.google.com/presentation/d/1-DgD4a0Szwinw-PAtViCE4ILsjR7jBoo8RYKnGdETfc/edit?usp=sharing" }
     ]
   },
   {

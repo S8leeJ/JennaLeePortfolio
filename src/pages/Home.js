@@ -216,8 +216,8 @@ function CompactCard({ p }) {
 }
 
 function Work({ projects }) {
-  const featured = projects.slice(0, 3);
-  const more = projects.slice(3);
+  const featured = projects.slice(0, 4);
+  const more = projects.slice(4);
   return (
     <section id="work" className="work">
       <SectionHeader eyebrow="Selected work" title="Things I've built." />
