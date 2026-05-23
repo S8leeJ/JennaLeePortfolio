@@ -4,6 +4,7 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 import PROJECTS from '../data/projects.json';
 import EXPERIENCE from '../data/experience.json';
 import SKILL_GROUPS from '../data/skills.json';
+import ParticleField from '../ParticleField';
 
 const resumePdf = '/resume.pdf';
 
@@ -68,6 +69,7 @@ function JourneyPath({ onJump }) {
 function Hero() {
   return (
     <header id="top" className="hero">
+      <ParticleField />
       <div className="hero-aurora" aria-hidden>
         <div className="aurora aurora-a" />
         <div className="aurora aurora-b" />
