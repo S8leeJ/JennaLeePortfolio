@@ -89,6 +89,28 @@ function Hero() {
           <a className="btn btn-primary" href="#work">See selected work <span aria-hidden>→</span></a>
           <a className="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
+        <ul className="hero-socials" aria-label="Contact links">
+          <li>
+            <a href="mailto:jenna.snow.lee@gmail.com" aria-label="Email">
+              <FaEnvelope />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jenna-lee-303993292/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/S8leeJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <FaGithub />
+            </a>
+          </li>
+          <li>
+            <a href={resumePdf} target="_blank" rel="noopener noreferrer" aria-label="Résumé">
+              <FaFileAlt />
+            </a>
+          </li>
+        </ul>
       </div>
       <div className="hero-skills">
         {SKILL_GROUPS.map((g) => (
