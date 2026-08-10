@@ -2,7 +2,7 @@
     {
     "id": "wavepoint",
     "num": "01",
-    "title": "WavePoint",
+    "title": "Wavepoint",
     "tagline": "Indoor/outdoor campus navigation with autonomous routing",
     "year": "2026",
     "role": "Technical Lead · Full-stack",
@@ -42,7 +42,7 @@
 },
   {
     "id": "allclear",
-    "num": "02",
+    "num": "03",
     "title": "AllClear",
     "tagline": "Real-time emergency response platform for disaster awareness",
     "year": "2025",
@@ -63,7 +63,7 @@
   },
    {
     "id": "skypocket",
-    "num": "02",
+    "num": "04",
     "title": "SkyPocket",
     "tagline": "Intelligent travel companion for shopping & budgeting abroad",
     "year": "2025",
@@ -83,7 +83,7 @@
   },
   {
     "id": "usherbot",
-    "num": "04",
+    "num": "05",
     "title": "UsherBot",
     "tagline": "Autonomous ROS2 robot for real-world indoor ushering",
     "year": "2026",
@@ -103,7 +103,7 @@
   },
   {
     "id": "excel-dell",
-    "num": "05",
+    "num": "06",
     "title": "Excel with Dell",
     "tagline": "Enterprise AI analytics platform for customer feedback",
     "year": "2026",
@@ -124,7 +124,7 @@
   },
   {
     "id": "wamplus",
-    "num": "06",
+    "num": "07",
     "title": "Wamp+",
     "tagline": "Interactive housing and apartment discovery platform",
     "year": "2026",
@@ -143,7 +143,7 @@
   },
   {
     "id": "stellar",
-    "num": "07",
+    "num": "08",
     "title": "Stellar Learning",
     "tagline": "Frontend at a free, AI-powered learning platform",
     "year": "2025 — present",
@@ -180,7 +180,7 @@
   },
   {
     "id": "kingdom",
-    "num": "08",
+    "num": "10",
     "title": "Kingdom Builder",
     "tagline": "Java strategy board game with full game logic",
     "year": "2024",

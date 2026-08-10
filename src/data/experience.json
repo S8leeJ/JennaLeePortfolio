@@ -3,60 +3,70 @@
     "when": "May 2026 — Present",
     "role": "Software Engineer",
     "org": "Lowe's Companies, Inc.",
+    "logo": "/logos/lowes.png",
     "detail": "Building scalable technology solutions to improve digital experiences and support millions of customers and associates."
   },
   {
     "when": "Jan 2026 — Present",
     "role": "Software Engineer",
     "org": "Todd Agriscience",
+    "logo": "/logos/todd.png",
     "detail": "Building hyper-intelligent mentors and AI research platforms for sustainable agriculture. "
   },
   {
     "when": "Jan 2026 — Present",
     "role": "Undergraduate Researcher",
     "org": "Learning Agents Research Group, UT Austin",
+    "logo": "/logos/utaustin.png",
     "detail": "Architecting an autonomous ushering platform fusing Next.js/Supabase reservations with a ROS2/Nav2 BWI robot."
   },
   {
     "when": "Feb — Apr 2026",
     "role": "Excel with Dell Member",
     "org": "Dell Technologies",
+    "logo": "/logos/dell.png",
     "detail": "Selected as 1 of 51 (from 325+) for Dell's technical case competition, built a Python NLP pipeline (LDA topic modeling + sentiment scoring)"
   },
   {
     "when": "Sep 2025 — Present",
     "role": "Engineering Fellow",
     "org": "Texas Product Engineering Organization",
+    "logo": "/logos/tpeo.png",
     "detail": "1 of 10 fellows selected from 170+ to develop nonprofit software solutions across Austin. Completed an intensive 10-week full-stack curriculum: Git, JavaScript, React, Node.js, system design."
   },
   {
     "when": "Sep 2025 — Present",
     "role": "Tech and Design Member",
     "org": "Texas Convergent",
+    "logo": "/logos/convergent.png",
     "detail": "Engineering full-stack AI applications in an agile startup incubator."
   },
   {
     "when": "Jun — Aug 2025",
     "role": "Software Engineer",
     "org": "Stellar Learning",
+    "logo": "/logos/stellar.png",
     "detail": "Built scalable front-end features for an AI-powered educational platform used by 25,000+ users."
   },
   {
     "when": "Jul — Aug 2025",
     "role": "Lead Instructor",
     "org": "Code Ninjas",
+    "logo": "/logos/codeninjas.png",
     "detail": "Taught 30+ students (ages 6–7) programming and engineering fundamentals using LEGO Robotics, Roblox Studio, Minecraft Redstone, and visual programming."
   },
   {
     "when": "2024 — 2025",
     "role": "Global STEM Scholar",
     "org": "AFS Global STEM Academies",
+    "logo": "/logos/afs.png",
     "detail": "Scholarship for a 12-week virtual + 4-week Brazil exchange. Earned the Advanced Certificate on Global Competence for Social Impact (UPenn Center for Social Impact Strategy). First-place anti-river-erosion project, presented at BP."
   },
   {
     "when": "2021 — 2025",
     "role": "High School",
     "org": "Seven Lakes High School",
+    "logo": "/logos/sevenlakes.png",
     "detail": "Ranked 8/887 · 4.84 weighted GPA. Orchestra & Tri-M President. NHS Media Chair. CSHS Historian. Robotics Awards Director."
   }
 ]
