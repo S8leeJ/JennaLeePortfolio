@@ -62,23 +62,23 @@
     ]
   },
    {
-    "id": "skypocket",
+    "id": "kingdom",
     "num": "04",
-    "title": "SkyPocket",
-    "tagline": "Intelligent travel companion for shopping & budgeting abroad",
-    "year": "2025",
-    "role": "Full-stack",
-    "image": "/projects/skypocket.png",
-    "description": "A travel companion app for trip planning, expense tracking, and shopping abroad. Real-time currency conversion, Google Vision product identification, and price comparison across regions — wrapped in a finance dashboard that scales to 20+ simultaneous trips.",
+    "title": "Kingdom Builder",
+    "tagline": "Java strategy board game with full game logic",
+    "year": "2024",
+    "role": "Solo build",
+    "image": "/projects/kingdom.png",
+    "description": "A complete digital adaptation of the strategy board game. Java AWT and Swing power the interactive GUI — card drawing, settlement placement, terrain highlighting, endgame scoring — with full turn-state handling and dynamic rendering across rounds.",
     "metrics": [
-      { "value": "500+", "label": "requests handled" },
-      { "value": "<1s", "label": "response time" },
-      { "value": "20+", "label": "trips supported" }
+      { "value": "100%", "label": "gameplay implemented" },
+      { "value": "Turn-based", "label": "state management" },
+      { "value": "Dynamic", "label": "GUI rendering" }
     ],
-    "tech": ["React Native", "Expo", "TypeScript", "Tailwind", "Firebase"],
+    "tech": ["Java", "AWT/Swing", "OOP"],
     "links": [
-      { "label": "GitHub", "href": "https://github.com/S8leeJ/DAM-Travel" },
-      { "label": "Case study", "href": "https://docs.google.com/presentation/d/1-DgD4a0Szwinw-PAtViCE4ILsjR7jBoo8RYKnGdETfc/edit?usp=sharing" }
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/KingdomBuilder-EJJ" },
+      { "label": "Write-up", "href": "https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing" }
     ]
   },
   {
@@ -179,23 +179,23 @@
     ]
   },
   {
-    "id": "kingdom",
+    "id": "skypocket",
     "num": "10",
-    "title": "Kingdom Builder",
-    "tagline": "Java strategy board game with full game logic",
-    "year": "2024",
-    "role": "Solo build",
-    "image": "/projects/kingdom.png",
-    "description": "A complete digital adaptation of the strategy board game. Java AWT and Swing power the interactive GUI — card drawing, settlement placement, terrain highlighting, endgame scoring — with full turn-state handling and dynamic rendering across rounds.",
+    "title": "SkyPocket",
+    "tagline": "Intelligent travel companion for shopping & budgeting abroad",
+    "year": "2025",
+    "role": "Full-stack",
+    "image": "/projects/skypocket.png",
+    "description": "A travel companion app for trip planning, expense tracking, and shopping abroad. Real-time currency conversion, Google Vision product identification, and price comparison across regions — wrapped in a finance dashboard that scales to 20+ simultaneous trips.",
     "metrics": [
-      { "value": "100%", "label": "gameplay implemented" },
-      { "value": "Turn-based", "label": "state management" },
-      { "value": "Dynamic", "label": "GUI rendering" }
+      { "value": "500+", "label": "requests handled" },
+      { "value": "<1s", "label": "response time" },
+      { "value": "20+", "label": "trips supported" }
     ],
-    "tech": ["Java", "AWT/Swing", "OOP"],
+    "tech": ["React Native", "Expo", "TypeScript", "Tailwind", "Firebase"],
     "links": [
-      { "label": "GitHub", "href": "https://github.com/S8leeJ/KingdomBuilder-EJJ" },
-      { "label": "Write-up", "href": "https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing" }
+      { "label": "GitHub", "href": "https://github.com/S8leeJ/DAM-Travel" },
+      { "label": "Case study", "href": "https://docs.google.com/presentation/d/1-DgD4a0Szwinw-PAtViCE4ILsjR7jBoo8RYKnGdETfc/edit?usp=sharing" }
     ]
   }
 ]

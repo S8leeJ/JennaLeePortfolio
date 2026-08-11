@@ -2,15 +2,31 @@ import React, { useEffect, useState } from 'react';
 
 const StarCursor = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const sync = () => setEnabled(finePointer.matches);
+    sync();
+    finePointer.addEventListener('change', sync);
+
+    if (!finePointer.matches) {
+      return () => finePointer.removeEventListener('change', sync);
+    }
+
     const move = (e) => setPos({ x: e.clientX, y: e.clientY });
     window.addEventListener('mousemove', move);
-    return () => window.removeEventListener('mousemove', move);
+    return () => {
+      finePointer.removeEventListener('change', sync);
+      window.removeEventListener('mousemove', move);
+    };
   }, []);
+
+  if (!enabled) return null;
 
   return (
     <svg
+      className="custom-cursor"
       viewBox="0 0 24 24"
       fill="none"
       stroke="yellow"

@@ -30,7 +30,12 @@ export default function ParticleField() {
       ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.scale(dpr, dpr);
 
-      const count = Math.min(90, Math.max(30, Math.floor((width * height) / 16000)));
+      const isNarrow = width < 720;
+      const density = isNarrow ? 28000 : 16000;
+      const count = Math.min(
+        isNarrow ? 36 : 90,
+        Math.max(isNarrow ? 16 : 30, Math.floor((width * height) / density))
+      );
       particles = Array.from({ length: count }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,

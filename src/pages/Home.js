@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import {
-  FaEnvelope, FaLinkedin, FaGithub, FaFileAlt,
+  FaEnvelope, FaLinkedin, FaGithub,
   FaJava, FaAws, FaDatabase, FaAward,
 } from 'react-icons/fa';
 import {
@@ -14,8 +14,6 @@ import PROJECTS from '../data/projects.json';
 import EXPERIENCE from '../data/experience.json';
 import SKILL_GROUPS from '../data/skills.json';
 import ParticleField from '../ParticleField';
-
-const resumePdf = '/resume.pdf';
 
 /* Brand icon + color for each skill pill */
 const SKILL_META = {
@@ -187,7 +185,7 @@ function Hero({ onJump }) {
                 <p className="hero-statement">
                   Studying Computer Science at UT Austin with a minor in Business
                   Foundations — working at the intersection of{' '}
-                  <em>business, UI/UX design, and engineering</em>.
+                  <strong>business, UI/UX design, and engineering</strong>.
                 </p>
               </div>
               <div className="hero-cta">
@@ -202,9 +200,6 @@ function Hero({ onJump }) {
                   <li>
                     <a href="https://github.com/S8leeJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
                   </li>
-                  <li>
-                    <a href={resumePdf} target="_blank" rel="noopener noreferrer" aria-label="Résumé"><FaFileAlt /></a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -212,7 +207,6 @@ function Hero({ onJump }) {
         </div>
         <div className="hero-bottom">
           <div className="hero-meta">
-            <span>©2026</span>
             <span>Based in Austin, TX</span>
             <button type="button" className="hero-scroll" onClick={() => onJump('work')}>
               Scroll to explore <span className="hero-scroll-arrow" aria-hidden>↓</span>
@@ -389,8 +383,13 @@ function Work({ projects }) {
         {projects.map((p, i) => {
           const kind = WORK_LAYOUT[i % WORK_LAYOUT.length];
           if (kind === 'show') showCount += 1;
+          const needsLift = p.num === '07' || p.num === '10';
           return (
-            <div key={p.id} className={`bento-slot slot-${kind}`} style={{ '--span': WORK_SPAN[kind] }}>
+            <div
+              key={p.id}
+              className={`bento-slot slot-${kind}${needsLift ? ' slot-spaced' : ''}`}
+              style={{ '--span': WORK_SPAN[kind] }}
+            >
               <Reveal className="bento-cell" delay={(i % 3) * 80}>
                 {kind === 'show' && <ShowcaseCard p={p} reversed={showCount % 2 === 0} onOpen={open} />}
                 {kind === 'tile' && <TileCard p={p} onOpen={open} />}
@@ -527,7 +526,10 @@ function Contact() {
             </p>
           </div>
           <a className="contact-mega" href="mailto:jenna.snow.lee@gmail.com">
-            <span className="cm-text">jenna.snow.lee@gmail.com</span>
+            <span className="cm-label">
+              <FaEnvelope className="cm-icon" aria-hidden />
+              <span className="cm-text">jenna.snow.lee@gmail.com</span>
+            </span>
             <span className="cm-arrow" aria-hidden>↗</span>
           </a>
           <div className="contact-pills">
@@ -537,17 +539,9 @@ function Contact() {
             <a className="contact-pill" href="https://github.com/S8leeJ" target="_blank" rel="noopener noreferrer">
               <FaGithub /> GitHub
             </a>
-            <a className="contact-pill" href={resumePdf} target="_blank" rel="noopener noreferrer">
-              <FaFileAlt /> Résumé
-            </a>
           </div>
         </Reveal>
       </div>
-      <footer className="footer">
-        <span>© 2026 Jenna Lee</span>
-        <span>Designed & built in Austin, TX</span>
-        <span>v3.0</span>
-      </footer>
     </section>
   );
 }
