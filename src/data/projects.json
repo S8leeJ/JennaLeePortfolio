@@ -20,26 +20,22 @@
     ]
   },
   {
-  "id": "sprout",
-  "num": "02",
-  "title": "Sprout",
-  "tagline": "Gamified financial wellness with AI receipt scanning & live markets",
-  "year": "2026",
-  "role": "Full-stack · Hackathon",
-  "image": "/projects/Sprout.png",
-  "description": "A gamified financial wellness platform that turns budgeting into a plant-growth journey. Features an AI receipt scanner using Gemini Vision for multimodal line-item extraction and auto-categorization, a real-time ETF dashboard powered by the Alpaca API with risk-profiled portfolios, and live market open/close detection. Built in 24 hours to win 1st place at Fidelity's FidHacks 2026.",
-  "metrics": [
-    { "value": "1st", "label": "FidHacks 2026" },
-    { "value": "24h", "label": "build time" },
-    { "value": "Real-time", "label": "ETF market data" }
-  ],
-  "tech": ["Next.js", "React", "TypeScript", "Supabase", "Gemini AI", "Alpaca API"],
-  "links": [
-    { "label": "Devpost", "href": "https://devpost.com/software/sprout-y0vz9t"},
-    { "label": "GitHub", "href": "https://github.com/phantomsk/Sprout" },
-    { "label": "Site", "href": "https://sprout-2muf.vercel.app/" }
-  ]
-},
+    "id": "cadence",
+    "num": "02",
+    "title": "Cadence",
+    "tagline": "Native iOS practice analyzer for tempo, quality, and streaks",
+    "year": "2026",
+    "role": "iOS Developer",
+    "image": "/projects/Cadence.jpg",
+    "description": "A native iOS app built in SwiftUI using MVVM and @Observable state to model practice tempo and quality. Features a tempo-ladder chart and difficulty heatmap built with Swift Charts over a relational, @Query-driven SwiftData schema, plus a WidgetKit extension with timeline providers and shared app persistence that surfaces excerpts and practice streaks on the home screen.",
+    "metrics": [
+      { "value": "Native", "label": "SwiftUI + SwiftData" },
+      { "value": "Swift Charts", "label": "tempo + difficulty views" },
+      { "value": "WidgetKit", "label": "home-screen streaks" }
+    ],
+    "tech": ["Swift", "SwiftUI", "SwiftData", "Swift Charts", "WidgetKit"],
+    "links": []
+  },
   {
     "id": "allclear",
     "num": "03",
@@ -61,24 +57,25 @@
       { "label": "Winners page", "href": "https://summeropen2025.com/winners" }
     ]
   },
-   {
-    "id": "kingdom",
+  {
+    "id": "sprout",
     "num": "04",
-    "title": "Kingdom Builder",
-    "tagline": "Java strategy board game with full game logic",
-    "year": "2024",
-    "role": "Solo build",
-    "image": "/projects/kingdom.png",
-    "description": "A complete digital adaptation of the strategy board game. Java AWT and Swing power the interactive GUI — card drawing, settlement placement, terrain highlighting, endgame scoring — with full turn-state handling and dynamic rendering across rounds.",
+    "title": "Sprout",
+    "tagline": "Gamified financial wellness with AI receipt scanning & live markets",
+    "year": "2026",
+    "role": "Full-stack · Hackathon",
+    "image": "/projects/Sprout.png",
+    "description": "A gamified financial wellness platform that turns budgeting into a plant-growth journey. Features an AI receipt scanner using Gemini Vision for multimodal line-item extraction and auto-categorization, a real-time ETF dashboard powered by the Alpaca API with risk-profiled portfolios, and live market open/close detection. Built in 24 hours to win 1st place at Fidelity's FidHacks 2026.",
     "metrics": [
-      { "value": "100%", "label": "gameplay implemented" },
-      { "value": "Turn-based", "label": "state management" },
-      { "value": "Dynamic", "label": "GUI rendering" }
+      { "value": "1st", "label": "FidHacks 2026" },
+      { "value": "24h", "label": "build time" },
+      { "value": "Real-time", "label": "ETF market data" }
     ],
-    "tech": ["Java", "AWT/Swing", "OOP"],
+    "tech": ["Next.js", "React", "TypeScript", "Supabase", "Gemini AI", "Alpaca API"],
     "links": [
-      { "label": "GitHub", "href": "https://github.com/S8leeJ/KingdomBuilder-EJJ" },
-      { "label": "Write-up", "href": "https://docs.google.com/document/d/109vskRagvIp-ZNfAtPxBfnOF9n0n0cLAyR8Lyizfccc/edit?usp=sharing" }
+      { "label": "Devpost", "href": "https://devpost.com/software/sprout-y0vz9t"},
+      { "label": "GitHub", "href": "https://github.com/phantomsk/Sprout" },
+      { "label": "Site", "href": "https://sprout-2muf.vercel.app/" }
     ]
   },
   {
